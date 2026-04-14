@@ -31,7 +31,23 @@ function App() {
     }
   };
 
- 
+  // 👉 Submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    localStorage.setItem("busForm", JSON.stringify(formData));
+    alert("Saved ✅");
+    
+    // 👉 Clear form after save
+    setFormData({
+      name: "",
+      gender: "",
+      source: "",
+      busType: "",
+      facilities: [],
+      date: "",
+      seats: ""
+    });
+  };
 
   return (
     <div>
