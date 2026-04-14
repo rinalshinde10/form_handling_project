@@ -125,8 +125,6 @@ function App() {
           onChange={handleChange}
         /> Charging
         <br /><br />
-
-     
         <input
           type="date"
           name="date"
@@ -134,8 +132,6 @@ function App() {
           onChange={handleChange}
         />
         <br /><br />
-
-     
         <input
           type="number"
           name="seats"
@@ -144,11 +140,9 @@ function App() {
           onChange={handleChange}
         />
         <br /><br />
-
         <button type="submit">Confirm Booking</button>
       </form>
     </div>
   );
 }
-
 export default App;
