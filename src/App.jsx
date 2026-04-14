@@ -12,7 +12,7 @@ function App() {
     seats: ""
   });
 
-  // 👉 Handle Change
+  
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
 
@@ -31,13 +31,13 @@ function App() {
     }
   };
 
-  // 👉 Submit
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("busForm", JSON.stringify(formData));
     alert("Saved ✅");
     
-    // 👉 Clear form after save
+    
     setFormData({
       name: "",
       gender: "",
@@ -64,7 +64,7 @@ function App() {
         />
         <br /><br />
 
-        {/* RADIO */}
+       
         <label>Gender:</label>
         <input
           type="radio"
@@ -83,7 +83,7 @@ function App() {
         /> Female
         <br /><br />
 
-        {/* SELECT */}
+      
         <select
           name="source"
           value={formData.source}
@@ -97,7 +97,6 @@ function App() {
 
         <br />
 
-        {/* DROPDOWN */}
         <select
           name="busType"
           value={formData.busType}
@@ -110,7 +109,7 @@ function App() {
 
         <br /><br />
 
-        {/* CHECKBOX */}
+      
         <label>Facilities: </label>
         <input
           type="checkbox"
@@ -127,7 +126,7 @@ function App() {
         /> Charging
         <br /><br />
 
-        {/* DATE */}
+     
         <input
           type="date"
           name="date"
@@ -136,7 +135,7 @@ function App() {
         />
         <br /><br />
 
-        {/* NUMBER */}
+     
         <input
           type="number"
           name="seats"
